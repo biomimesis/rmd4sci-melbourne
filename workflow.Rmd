@@ -155,10 +155,10 @@ Let's open one together.
 
 ## Your Turn: Use your own rstudio project {.exercise}
 
-1. Run the following code to start a new rstudio project called "rmd4sci-canberra"
+1. Run the following code to start a new rstudio project called "rmd4sci-melbourne"
 
 ```r
-usethis::use_course("bit.ly/rmd4sci-canberra")
+usethis::use_course("bit.ly/rmd4sci-melbourne")
 ```
 
 2. Follow the prompts to download this to your desktop and then run the rstudio project. (You can move it later if you like!)
