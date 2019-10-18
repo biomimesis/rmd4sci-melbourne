@@ -1,6 +1,6 @@
 # Installation
 
-In this section, the aim is to have everyone setup with R, RStudio, and RMarkdown.
+In this section, the aim is to have everyone setup with R, RStudio, and R Markdown.
 
 ## Overview
 
@@ -32,7 +32,7 @@ https://cloud.r-project.org/bin/linux/
 
 https://www.rstudio.com/products/rstudio/download/#download
 
-## RMarkdown
+## R Markdown
 
 To ensure you are up to date, run the following script to install the packages.
 

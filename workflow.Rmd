@@ -129,15 +129,15 @@ This file path situation is a real pain. Is there an answer to the madness?
 
 The answer is yes!
 
-I highly recommend when you start on a new idea, new research project, paper. Anything that is new. It should start its life as an **rstudio project**. 
+I highly recommend when you start on a new idea, new research project, paper. Anything that is new. It should start its life as an **RStudio project**. 
 
-An rstudio project helps keep related work together in the same place. Amongst other things, they:
+An RStudio project helps keep related work together in the same place. Amongst other things, they:
 
 * Keep all your files together
 * Set the working directory to the project directory
 * Starts a new session of R
 * Restore previously edited files into the editor tabs
-* Restore other rstudio settings
+* Restore other RStudio settings
 * Allow for multiple R projects open at the same time.
 
 This helps keep you sane, because:
@@ -153,17 +153,17 @@ And finally, the big one
 
 Let's open one together.
 
-## Your Turn: Use your own rstudio project {.exercise}
+## Your Turn: Use your own RStudio project {.exercise}
 
-1. Run the following code to start a new rstudio project called "rmd4sci-melbourne"
+1. Run the following code to start a new RStudio project called "rmd4sci-melbourne"
 
 ```r
 usethis::use_course("bit.ly/rmd4sci-melbourne")
 ```
 
-2. Follow the prompts to download this to your desktop and then run the rstudio project. (You can move it later if you like!)
+2. Follow the prompts to download this to your desktop and then run the RStudio project. (You can move it later if you like!)
 
-3. You are now in an rstudio project!
+3. You are now in an RStudio project!
 
 ## Your turn {.exercise}
 
@@ -221,7 +221,7 @@ setwd("C:\Users\jenny\path\that\only\I\have")
 
 ### Aside: Creating an RStudio project {.history}
 
-You can create an rstudio project by going to:
+You can create an RStudio project by going to:
 
 file > new project > new directory > new project > name your project > create project.
 
@@ -266,5 +266,5 @@ one!
 In this lesson we've:
 
 * Learnt what file paths are
-* How to setup an rstudio project
+* How to setup an RStudio project
 * How to construct full file paths with the `here` package

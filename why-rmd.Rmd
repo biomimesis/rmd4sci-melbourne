@@ -1,4 +1,4 @@
-# Why RMarkdown
+# Why R Markdown
 
 The goal of this section is to briefly discuss why we want to learn rmarkdown, the benefits, and the barriers to using it.
 
@@ -235,6 +235,6 @@ In this section we've learned about:
 
 ## Learning more
 
-- [rstudio's rmarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
+- [RStudio's rmarkdown cheatsheet](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf)
 
 - [Bookdown's section on markdown syntax](https://bookdown.org/yihui/bookdown/markdown-syntax.html)

@@ -5,20 +5,20 @@
 
 # Rmarkdown for Scientists <img src="logo.png" align="right" height=140/>
 
-This is a book on rmarkdown, aimed for scientists. It was initially developed as a 3 hour workshop, but is now developed into a resource that will grow and change over time as a **living book**.
+This is a book on R Markdown, aimed for scientists. It was initially developed as a 3 hour workshop, but is now developed into a resource that will grow and change over time as a **living book**.
 
 This book aims to teach the following:
 
 - Getting started with your own R Markdown document
 - Improve workflow:
-  - With rstudio projects
+  - With RStudio projects
   - Using keyboard shortcuts
 - Export your R Markdown document to PDF, HTML, and Microsoft Word
 - Better manage figures and tables
     - Reference figures and tables in text so that they dynamically update
     - Create captions for figures and tables
     - Change the size and type of figures
-    - Save the figures to disk when creating an rmarkdown document
+    - Save the figures to disk when creating an R Markdown document
 - Work with equations
     - inline and display
     - caption equations
@@ -27,8 +27,8 @@ This book aims to teach the following:
   - Cite articles in text
   - generate bibliographies
   - Change bibliography styles
-- Debug and handle common errors with rmarkdown
-- Next steps in working with rmarkdown - how to extend yourself to other rmarkdown formats
+- Debug and handle common errors with R Markdown
+- Next steps in working with R Markdown - how to extend yourself to other rmarkdown formats
 
 # Abstract aka "why should you read this"
 

@@ -21,7 +21,7 @@ Now that you are near the end of your data analysis, you want to make sure that 
 
 ## How to cite things
 
-Citing things in an rmarkdown document is straightforward, you refer to articles you want to cite using `[@article-handle]`. Here, `article-handle` matches the article handle in your `.bib` file.
+Citing things in an R Markdown document is straightforward, you refer to articles you want to cite using `[@article-handle]`. Here, `article-handle` matches the article handle in your `.bib` file.
 
 This `.bib` file is referred to in the YAML of your document, under the option `bibliography: filename.bib`:
 
@@ -94,7 +94,7 @@ csl: my_journal.csl
 ### ## Your Turn {.exercise}
 
 1. select your bibliography style to be one from your favourite journal at the CSL github repo here: https://github.com/citation-style-language/styles (> 1800 citations and counting)
-1. place this in your rstudio project
+1. place this in your RStudio project
 1. refer to it in the YAML
 1. Render your document and observe your greatness
 

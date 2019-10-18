@@ -8,7 +8,7 @@ bibliography: packages.bib
 
 # Tasks
 
-- Get this rmarkdown document to compile
+- Get this R Markdown document to compile
   - hint:
     - knit the document and look at the line for the error
     - if there is an error:
@@ -19,7 +19,7 @@ bibliography: packages.bib
           - run all chunks below (top section Run>arrow>run all chunks below)
           - explore working directory issues
             - where is the packages.bib file?
-            - remember that the rmarkdown directory is where the .Rmd file lives
+            - remember that the R Markdown directory is where the .Rmd file lives
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,
