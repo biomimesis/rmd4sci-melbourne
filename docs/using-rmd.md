@@ -1,6 +1,6 @@
 # Using Rmarkdown
 
-Now that we've covered how to organise your project, have some data, and talked a bit about what rmarkdown is, let's talk about using it.
+Now that we've covered how to organise your project, have some data, and talked a bit about what Rmarkdown is, let's talk about using it.
 
 ## Overview
 
@@ -9,18 +9,18 @@ Now that we've covered how to organise your project, have some data, and talked 
 
 ## Questions
 
-* How should I start an rmarkdown document?
+* How should I start an Rmarkdown document?
 * What do I put in the YAML metadata?
 * How do I create a code chunk?
 * What sort of options to I need to worry about for my code?
 
 ## Objectives
 
-* Create an rmarkdown document, do some basic exploration
+* Create an Rmarkdown document, do some basic exploration
 
-## The anatomy of an rmarkdown document
+## The anatomy of an Rmarkdown document
 
-This is an rmarkdown document (demo). It has three parts:
+This is an Rmarkdown document (demo). It has three parts:
 
 * Metadata (YAML)
 * Text (markdown formatting)
@@ -42,6 +42,13 @@ output: html_document
 
 It starts and ends with three dashes `---`, and has fields like the following: `title`, `author`, and `output`.
 
+The title and author are special inputs which place the title and author information at the top of the document in large font. They are optional!
+
+output: `html_document` tells us we want this to be a HTML document - you'll see what this looks like in a moment!
+
+
+#### Some extra details
+
 The options in the YAML are actually passed down into the `render` function under the hood.
 
 This means that:
@@ -56,7 +63,7 @@ output:
 is the same as:
 
 ```r
-html_document(toc = TRUE, toc_depth = 2)
+render(file.Rmd, output_format = html_document(toc = TRUE, toc_depth = 2))
 ```
 
 ### Text
@@ -76,7 +83,7 @@ It provides a simple way to mark up text
 
 __bold__, **bold**, _italic_, *italic*
 
-> quote of something profound 
+> quote of something profound
 ```
 
 ````
@@ -100,7 +107,7 @@ Would be converted to:
 
 __bold__, **bold**, _italic_, *italic*
 
-> quote of something profound 
+> quote of something profound
 
 
 ```r
@@ -123,7 +130,7 @@ __bold__, **bold**, _italic_, *italic*
 
 ### Code
 
-We refer to code in an rmarkdown document in two ways, code chunks, and inline code.
+We refer to code in an Rmarkdown document in two ways, code chunks, and inline code.
 
 #### Code chunks
 
@@ -152,7 +159,7 @@ Every chunk should ideally have a name. As I've mentioned earlier, naming things
 
 ## Code chunk options
 
-You can control how the code is output by changing the code chunk options which follow the title. 
+You can control how the code is output by changing the code chunk options which follow the title.
 
 ````markdown
 ```{r read-gapminder, eval = FALSE, echo = TRUE}
@@ -166,7 +173,7 @@ The ones that you need to know about right now are:
   * `eval`: Do you want to evaluate the code?
   * `echo`: Do you want to print the code?
   * `include`: Do you want to include code output in the final output document? Setting to `FALSE` means nothing is put into the output document, but the code is still run.
-  
+
 <!-- What are messages, warnings, errors, results? -->
 
   <!-- * error: If you want R to stop on errors, set to `FALSE` -->
@@ -175,7 +182,7 @@ The ones that you need to know about right now are:
 
 
 <!--   * results: option 'hold' will wait until the code chunk is complete and then  -->
-  
+
 You can read more about the options at the official documentation: https://yihui.name/knitr/options/#code-evaluation
 
 ### Inline code
@@ -190,7 +197,7 @@ You can call code "inline"  like so:
 
 ````markdown
 
-There are `r nrow(airquality) ` observations in the airquality dataset, 
+There are `r nrow(airquality) ` observations in the airquality dataset,
 and `r 'ncol(airquality) ` variables.
 
 ````
@@ -227,7 +234,7 @@ What's great about this is that if your data changes upstream, then you don't ne
 <!-- - Keep it simple -->
 <!-- - focus on content -->
 
-## Nick's rmarkdown hygiene recommendations
+## Nick's Rmarkdown hygiene recommendations
 
 I highly recommend that each document you write has three chunks at the top.
 
@@ -235,10 +242,10 @@ I highly recommend that each document you write has three chunks at the top.
 ````markdown
 
 ```{r setup , include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, 
+knitr::opts_chunk$set(echo = FALSE,
                       fig.align = "center",
-                      fig.width = 4, 
-                      fig.height = 4, 
+                      fig.width = 4,
+                      fig.height = 4,
                       dev = "png",
                       cache = TRUE)
 ```
@@ -260,11 +267,11 @@ gapminder <- read_csv(here::here("data", "gapminder.csv"))
 
 ````
 
-In the `setup` chunk, you set the options that you want to define globally. In this case, I've told rmarkdown:
+In the `setup` chunk, you set the options that you want to define globally. In this case, I've told Rmarkdown:
 
 * `echo = FALSE`: I don't want any code printed by setting `echo = FALSE`.
 * `fig.align = "center"` Align my figures in the center
-* `fig.width = 4` & `fig.height = 4`. Set the width and height to 4 inches. 
+* `fig.width = 4` & `fig.height = 4`. Set the width and height to 4 inches.
 *  `dev = "png"`. Save the images as PNG
 * `cache = TRUE`. Save the output results of all my chunks so that they don't need to be run again.
 
@@ -276,10 +283,10 @@ In the `readr` chunk, you read in any data you are going to be using in the docu
 
 Now, this is my personal preference, but I find the following benefits:
 
-1. The "top part" of your document contains all the metadata / setup info. Your global options, 
+1. The "top part" of your document contains all the metadata / setup info. Your global options,
 1. It helps another person get oriented with your work - they know the settings, the functions used, and the special things that you wrote (your functions)
 1. Remember, "another person" includes yourself in 6 months.
 
 ## Your Turn {.exercise}
 
-1. Update your rmarkdown document based on the aforementioned hygiene steps discussed by Nick.
+1. Update your Rmarkdown document based on the aforementioned hygiene steps discussed by Paul.
