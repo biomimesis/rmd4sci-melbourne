@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>5 Workflow | R Markdown for Scientists</title>
   <meta name="description" content="A book created for a 3 hour workshop on R Markdown" />
-  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.15 and GitBook 2.6.7" />
 
   <meta property="og:title" content="5 Workflow | R Markdown for Scientists" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Nicholas Tierney" />
 
 
-<meta name="date" content="2019-11-11" />
+<meta name="date" content="2019-11-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -511,11 +511,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li>Run the following code to start a new RStudio project called “rmd4sci-melbourne”</li>
 </ol>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="workflow.html#cb22-1"></a><span class="op">&lt;</span><span class="er">&lt;&lt;&lt;&lt;&lt;&lt;</span><span class="st"> </span>HEAD</span>
-<span id="cb22-2"><a href="workflow.html#cb22-2"></a>usethis<span class="op">::</span><span class="kw">use_course</span>(<span class="st">&quot;bit.ly/rmd4sci-melbourne&quot;</span>)</span>
-<span id="cb22-3"><a href="workflow.html#cb22-3"></a><span class="op">==</span><span class="er">=====</span></span>
-<span id="cb22-4"><a href="workflow.html#cb22-4"></a>usethis<span class="op">::</span><span class="kw">use_course</span>(<span class="st">&quot;bit.ly/rmd4sci-materials&quot;</span>)</span>
-<span id="cb22-5"><a href="workflow.html#cb22-5"></a><span class="op">&gt;</span><span class="er">&gt;&gt;&gt;&gt;&gt;&gt;</span><span class="st"> </span>upstream<span class="op">/</span>master</span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="workflow.html#cb22-1"></a>usethis<span class="op">::</span><span class="kw">use_course</span>(<span class="st">&quot;bit.ly/opp-rmd4sci-materials&quot;</span>)</span></code></pre></div>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Follow the prompts to download this to your desktop and then run the RStudio project. (You can move it later if you like!)</p></li>
 <li><p>You are now in an RStudio project!</p></li>
@@ -619,15 +615,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": true,
 "facebook": false,
 "twitter": false,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"],
+"github": true
 },
 "fontsettings": {
 "theme": "white",

@@ -1,7 +1,7 @@
 --- 
 title: "R Markdown for Scientists"
 author: "Nicholas Tierney"
-date: "2019-11-11"
+date: "2019-11-15"
 knit: "bookdown::render_book"
 description: "A book created for a 3 hour workshop on R Markdown"
 documentclass: krantz
@@ -81,7 +81,7 @@ Course materials can be downloaded by using the following command from the `uset
 
 
 ```r
-usethis::use_course("bit.ly/rmd4sci-materials")
+usethis::use_course("bit.ly/opp-rmd4sci-materials")
 ```
 
 

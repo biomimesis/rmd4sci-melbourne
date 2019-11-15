@@ -246,7 +246,7 @@ knitr::include_graphics(here::here("figs", "ssa-logo.png"))
 ```
 
 <div class="figure" style="text-align: center">
-<img src="/Users/adamsparks/Development/rmd4sci-melbourne/figs/ssa-logo.png" alt="The new SSA logo, which is actually a scatterplot, which is super neat!" width="25%" />
+<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/ssa-logo.png" alt="The new SSA logo, which is actually a scatterplot, which is super neat!" width="25%" />
 <p class="caption">(\#fig:ssa-logo)The new SSA logo, which is actually a scatterplot, which is super neat!</p>
 </div>
 

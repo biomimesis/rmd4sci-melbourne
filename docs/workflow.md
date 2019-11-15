@@ -150,11 +150,7 @@ Let's open one together.
 1. Run the following code to start a new RStudio project called "rmd4sci-melbourne"
 
 ```r
-<<<<<<< HEAD
-usethis::use_course("bit.ly/rmd4sci-melbourne")
-=======
-usethis::use_course("bit.ly/rmd4sci-materials")
->>>>>>> upstream/master
+usethis::use_course("bit.ly/opp-rmd4sci-materials")
 ```
 
 2. Follow the prompts to download this to your desktop and then run the RStudio project. (You can move it later if you like!)
@@ -225,15 +221,15 @@ file > new project > new directory > new project > name your project > create pr
 
 You can also click on the create project button in the top left corner
 
-<img src="/Users/adamsparks/Development/rmd4sci-melbourne/figs/rstudio-create-proj-1.png" width="50%" style="display: block; margin: auto;" />
+<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-1.png" width="50%" style="display: block; margin: auto;" />
 
 Then go to new directory, if it is a new folder - otherwise if you have an existing folder you have - click on existing directory.
 
-<img src="/Users/adamsparks/Development/rmd4sci-melbourne/figs/rstudio-create-proj-2.png" width="50%" style="display: block; margin: auto;" />
+<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-2.png" width="50%" style="display: block; margin: auto;" />
 
 Then go to new project
 
-<img src="/Users/adamsparks/Development/rmd4sci-melbourne/figs/rstudio-create-proj-3.png" width="50%" style="display: block; margin: auto;" />
+<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-3.png" width="50%" style="display: block; margin: auto;" />
 
 Then write the name of your project. I think it is usually worthwhile spending a bit of time thinking of a name for your project. Even if it is only a few minutes, it can make a difference. You want to think about:
 
@@ -245,7 +241,7 @@ For example, I have a project looking at bat calls, so I called it `screech`, be
 
 And click "create project". 
 
-<img src="/Users/adamsparks/Development/rmd4sci-melbourne/figs/rstudio-create-proj-4.png" width="50%" style="display: block; margin: auto;" />
+<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-4.png" width="50%" style="display: block; margin: auto;" />
 
 D!-- TODO: need to update image? -->
 

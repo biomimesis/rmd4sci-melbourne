@@ -64,9 +64,9 @@ citation()
 ## 
 ## To cite R in publications use:
 ## 
-##   R Core Team (2019). R: A language and environment for
-##   statistical computing. R Foundation for Statistical Computing,
-##   Vienna, Austria. URL https://www.R-project.org/.
+##   R Core Team (2019). R: A language and environment for statistical
+##   computing. R Foundation for Statistical Computing, Vienna, Austria.
+##   URL https://www.R-project.org/.
 ## 
 ## A BibTeX entry for LaTeX users is
 ## 
@@ -79,9 +79,9 @@ citation()
 ##     url = {https://www.R-project.org/},
 ##   }
 ## 
-## We have invested a lot of time and effort in creating R, please
-## cite it when using it for data analysis. See also
-## 'citation("pkgname")' for citing R packages.
+## We have invested a lot of time and effort in creating R, please cite it
+## when using it for data analysis. See also 'citation("pkgname")' for
+## citing R packages.
 ```
 
 And for ggplot2 with
