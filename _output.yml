@@ -10,7 +10,7 @@ bookdown::gitbook:
       after: |
         <li><a href="https://bookdown.org" target="_blank">Published with bookdown</a></li>
     download: [epub]
-    edit: https://github.com/njtierney/rmd4sci/edit/master/%s
+    edit: https://github.com/openplantpathology/rmd4sci-melbourne/edit/master/%s
     sharing:
       github: yes
       facebook: false
