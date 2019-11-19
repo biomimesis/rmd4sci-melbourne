@@ -1,7 +1,7 @@
 --- 
 title: "R Markdown for Scientists"
 author: "Nicholas Tierney"
-date: "2019-11-19"
+date: "2019-11-15"
 knit: "bookdown::render_book"
 description: "A book created for a 3 hour workshop on R Markdown"
 documentclass: krantz
@@ -66,9 +66,9 @@ We worked through the following sections in the book in 3 hours:
 - [What are Some Useful Keyboard Shortcuts](keyboard-shortcuts)
 - [Adding Captions to Tables and Figures](figures-tables-captions)
 - [Changing Figures](changing-figures)
-- [Adding Mathematics](math)
+- [Adding mathematics](math)
 - [Citing Figures and Tables](cite-fig-tab-sec)
-- [Changing Citations and Styles](citations-and-styles)
+- [Changing Citations and styles](citations-and-styles)
 
 With the remaining sections being used as extra material, or have since been written after the course:
 

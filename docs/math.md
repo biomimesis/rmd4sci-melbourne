@@ -1,6 +1,6 @@
 # Math
 
-Want to include equations in your writing? Easy. R Markdown supports
+Want to include equations in your writing? Easy. rmarkdown supports
 LaTeX style equation writing. This section introduces the two types equations, inline, and display form, and how to number equations.
 
 ## Overview

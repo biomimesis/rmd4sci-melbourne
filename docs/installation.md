@@ -49,7 +49,7 @@ install.packages("fs")
 
 ## A note on PDF
 
-R Markdown documents can be compiled to PDF, which is a great feature. In order to convert the documents to PDF, they use a software called LaTeX (\LaTeX) (pronounced la-tek or lay-tek). 
+rmarkdown documents can be compiled to PDF, which is a great feature. In order to convert the documents to PDF, they use a software called LaTeX (\LaTeX) (pronounced la-tek or lay-tek). 
 
 Installing LaTeX [can be a pain](https://yihui.name/tinytex/pain/), but thankfully there is an easier way to install it - [`tinytex`](https://yihui.name/tinytex/). `tinytex` is an R package that installs a sane, lightweight (<200Mb) version of LaTeX. 
 

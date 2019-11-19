@@ -16,11 +16,11 @@ Now that we've covered how to organise your project, have some data, and talked 
 
 ## Objectives
 
-* Create an R Markdown document, do some basic exploration
+* Create an Rmarkdown document, do some basic exploration
 
-## The anatomy of an R Markdown document
+## The anatomy of an Rmarkdown document
 
-This is an R Markdown document (demo). It has three parts:
+This is an Rmarkdown document (demo). It has three parts:
 
 * Metadata (YAML)
 * Text (markdown formatting)
@@ -30,7 +30,7 @@ This is an R Markdown document (demo). It has three parts:
 
 The metadata of the document tells you how it is formed - what the title is, what date to put, and other control information.  If you're familiar with LaTeX, this is kind of like how you specify the many options, what sort of document it is, what styles to use, etc at the front matter.
 
-R Markdown documents use YAML (YAML Ain't Markup Language) to provide the metadata. It looks like this.
+Rmarkdown documents use YAML (YAML Ain't Markup Language) to provide the metadata. It looks like this.
 
 ```YAML
 ---
@@ -68,7 +68,7 @@ render(file.Rmd, output_format = html_document(toc = TRUE, toc_depth = 2))
 
 ### Text
 
-Is Markdown, as we discussed in the earlier section,
+Is markdown, as we discussed in the earlier section,
 
 It provides a simple way to mark up text
 
@@ -130,7 +130,7 @@ __bold__, **bold**, _italic_, *italic*
 
 ### Code
 
-We refer to code in an R Markdown document in two ways, code chunks, and inline code.
+We refer to code in an Rmarkdown document in two ways, code chunks, and inline code.
 
 #### Code chunks
 
@@ -142,8 +142,7 @@ Code chunks are marked by three backticks and curly braces with `r` inside them:
 ```
 ````
 
-**A backtick**, "`", is a special character you might not have seen before, it is typically located under the tilde key (`~`).
-On USA / Australia keyboards, is under the escape key:
+**a backtick** is a special character you might not have seen before, it is typically located under the tilde key (`~`). On USA / Australia keyboards, is under the escape key:
 
 <div class="figure">
 <img src="figs/ansi-keyboard.png" alt="image from https://commons.wikimedia.org/wiki/File:ANSI_Keyboard_Layout_Diagram_with_Form_Factor.svg" width="100%" />
@@ -170,7 +169,7 @@ gap <- read_csv("gapminder.csv")
 
 The ones that you need to know about right now are:
 
-  * `cache`: TRUE / FALSE. Do you want to save the output of the chunk so it doesn't have to run next time? While this can be useful, use with caution.
+  * `cache`: TRUE / FALSE. Do you want to save the output of the chunk so it doesn't have to run next time?
   * `eval`: Do you want to evaluate the code?
   * `echo`: Do you want to print the code?
   * `include`: Do you want to include code output in the final output document? Setting to `FALSE` means nothing is put into the output document, but the code is still run.
@@ -209,19 +208,19 @@ Which gives you the following sentence
 
 What's great about this is that if your data changes upstream, then you don't need to work out where you mentioned your data, you just update the document.
 
-## Creating an RMarkdown document
+## Creating an rmarkdown document
 
-* RStudio menu system
+* Rstudio menu system
 * Explore the template provided by rstudio
 * Compile an rmarkdown document
 
-## Working with an R Markdown document
+## Working with an rmarkdown document
 
-**Demo: Create an R Markdown document in RStudio.**
+**Demo: Create an rmarkdown document in rstudio.**
 
 ### Your Turn {.exercise}
 
-1. Use the TStudio project you previously created, `rmd4sci-materials`, and create an R Markdown document
+1. Use the rstudio project you previously created, `rmd4sci-materials`, and create an rmarkdown document
 1. Run some brief summaries of the data in the rmarkdown document inside the `
     - hist(data$)
     - How big is the data?
@@ -235,9 +234,10 @@ What's great about this is that if your data changes upstream, then you don't ne
 <!-- - Keep it simple -->
 <!-- - focus on content -->
 
-## Nick's R Markdown hygiene recommendations
+## Nick's Rmarkdown hygiene recommendations
 
 I highly recommend that each document you write has three chunks at the top.
+
 
 ````markdown
 
@@ -272,18 +272,12 @@ In the `setup` chunk, you set the options that you want to define globally. In t
 * `echo = FALSE`: I don't want any code printed by setting `echo = FALSE`.
 * `fig.align = "center"` Align my figures in the center
 * `fig.width = 4` & `fig.height = 4`. Set the width and height to 4 inches.
-*  `dev = "png"`. Save the images as PNG.
+*  `dev = "png"`. Save the images as PNG
 * `cache = TRUE`. Save the output results of all my chunks so that they don't need to be run again.
 
-In the `library` chunk, you put all the library calls.
-This helps make it clearer for anyone else who might read your work what is needed to run this document.
-I often go through the process of moving these `library` calls to the top of the document when I have a moment, or when I'm done writing.
-You can also look at Miles McBain's [`packup`](https://github.com/milesMcBain/packup) package to help move these library calls to the top of a document.
+In the `library` chunk, you put all the library calls. This helps make it clearer for anyone else who might read your work what is needed to run this document. I often go through the process of moving these `library` calls to the top of the document when I have a moment, or when I'm done writing. You can also look at Miles McBain's [`packup`](https://github.com/milesMcBain/packup) package to help move these library calls to the top of a document.
 
-In the `functions` chunk, you put any functions that you write in the process of writing your document.
-Similar to the `library` chunk, I write these functions as I go, as needed, and them move these to the top when I get a moment, or once I'm done.
-The benefit of this is that all your functions are in one spot, and you might be able to identify ways to make them work better together, or improve them separately.
-You might even want to move these into a new R package, and putting them here makes that easier to see what you are doing.
+In the `functions` chunk, you put any functions that you write in the process of writing your document. Similar to the `library` chunk, I write these functions as I go, as needed, and them move these to the top when I get a moment, or once I'm done. The benefit of this is that all your functions are in one spot, and you might be able to identify ways to make them work better together, or improve them separately. You might even want to move these into a new R package, and putting them here makes that easier to see what you are doing.
 
 In the `readr` chunk, you read in any data you are going to be using in the document.
 
@@ -295,4 +289,4 @@ Now, this is my personal preference, but I find the following benefits:
 
 ## Your Turn {.exercise}
 
-1. Update your R Markdown document based on the aforementioned hygiene steps discussed by Paul.
+1. Update your Rmarkdown document based on the aforementioned hygiene steps discussed by Paul.

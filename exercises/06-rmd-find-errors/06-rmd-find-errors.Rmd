@@ -1,5 +1,5 @@
 ---
-title: "rmarkdown Errors"
+title: "Rmarkdown Errors"
 author: Nicholas Tierney
 Date: 2017/06/27
 output: 
