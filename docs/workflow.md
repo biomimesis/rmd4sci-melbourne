@@ -30,7 +30,7 @@ In groups of 2-4 discuss:
 
 This section is heavily influenced by [Jenny Bryan's great blog post on project based workflows.](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/)
 
-Sometimes this is the first line of an R Script or R markdown file.
+Sometimes this is the first line of an R Script or R Markdown file.
 
 ```r
 setwd("c:/really/long/file/path/to/this/directory)
@@ -121,9 +121,10 @@ This file path situation is a real pain. Is there an answer to the madness?
 
 The answer is yes!
 
-I highly recommend when you start on a new idea, new research project, paper. Anything that is new. It should start its life as an **RStudio project**. 
+I highly recommend when you start on a new idea, new research project, paper. Anything that is new.
+It should start its life as an **RStudio Project**. 
 
-An RStudio project helps keep related work together in the same place. Amongst other things, they:
+An RStudio Project helps keep related work together in the same place. Amongst other things, they:
 
 * Keep all your files together
 * Set the working directory to the project directory
@@ -141,7 +142,7 @@ This helps keep you sane, because:
 
 And finally, the big one
 
-**RStudio projects help resolve file path problems**, because they automatically set the working directory to the location of the rstudio project.
+**RStudio Projects help resolve file path problems**, because they automatically set the working directory to the location of the rstudio project.
 
 Let's open one together.
 
@@ -150,7 +151,7 @@ Let's open one together.
 1. Run the following code to start a new RStudio project called "rmd4sci-melbourne"
 
 ```r
-usethis::use_course("bit.ly/opp-rmd4sci-materials")
+usethis::use_course("bit.ly/rmd4sci-materials")
 ```
 
 2. Follow the prompts to download this to your desktop and then run the RStudio project. (You can move it later if you like!)
@@ -168,7 +169,8 @@ usethis::use_course("bit.ly/opp-rmd4sci-materials")
 
 ## The "here" package
 
-Although RStudio projects help resolve file path problems, in some cases you might have many folders in your r project. To help navigate them appropriately, you can use the `here` package to provide the full path directory, in a compact way.
+Although RStudio Projects help resolve file path problems, in some cases you might have many folders in your r project.
+To help navigate them appropriately, you can use the `here` package to provide the full path directory, in a compact way.
 
 ```r
 here::here("data")
@@ -199,8 +201,8 @@ You can read the above `here` code as:
 This is really handy for a few reasons:
 
 1. It makes things _completely_ portable
-1. Rmarkdown documents have a special way of looking for files, this helps eliminate file path pain.
-1. If you decide to not use RStudio projects, you have code that will work on _any machine_
+1. R Markdown documents have a special way of looking for files, this helps eliminate file path pain.
+1. If you decide to not use RStudio Projects, you have code that will work on _any machine_
 
 ## Remember
 
@@ -215,11 +217,11 @@ setwd("C:\Users\jenny\path\that\only\I\have")
 
 ### Aside: Creating an RStudio project {.history}
 
-You can create an RStudio project by going to:
+You can create an RStudio Project by going to:
 
-file > new project > new directory > new project > name your project > create project.
+File > New Project > New Directory > New Project > name your project > create project.
 
-You can also click on the create project button in the top left corner
+You can also click on the create project button in the top left corner or "New Project" from the dropdown in the top right corner.
 
 <img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-1.png" width="50%" style="display: block; margin: auto;" />
 

@@ -41,7 +41,7 @@ This book aims to teach the following:
   - generate bibliographies
   - Change bibliography styles
 - Debug and handle common errors with R Markdown
-- Next steps in working with rmarkdown - how to extend yourself to other R Markdown formats
+- Next steps in working with R Markdown - how to extend yourself to other R Markdown formats
     
 ## Why write this as a book?
 
