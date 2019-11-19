@@ -16,9 +16,21 @@ link-citations: yes
 url: 'https\://openplantpathology.github.io/rmd4sci-melbourne/'
 ---
 
+# Foreword
+
+<img style="float:right" src="figs/OPP logo hex.png"> These materials were created from the book written by [Nick Tierney](https://www.njtierney.com/), [rmd4sci](https://github.com/njtierney/rmd4sci), for a 2019 APPS meeting workshop, "Reproducible reports and research using R" as an [Open Plant Pathology](https://openplantpathology.org/) initiative.
+Minor changes have been made to the materials for this workshop.
+However, the materials remain largely the work of Nick, we thank him for his efforts to create this and for joining us in presenting this workshop.
+What follows is Nick's introduction to this material.
+
+Adam H. Sparks 2019-11-20
+
+-------
+
 # About this {-}
 
-<img style="float:right" src="figs/OPP logo hex.png"> This is a book on R Markdown, aimed for scientists. It was initially developed as a 3 hour workshop, but is now developed into a resource that will grow and change over time as a **living book**.
+This is a book on R Markdown, aimed for scientists.
+It was initially developed as a 3 hour workshop, but is now developed into a resource that will grow and change over time as a **living book**.
 
 This book aims to teach the following:
 
