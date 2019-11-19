@@ -1,8 +1,9 @@
 # Common Problems with R Markdown (and some solutions)
 
-There are some things that I run into fairly frequently (and some not so much) when I'm rendering my R Markdown documents. This section details some the common problems, and the solution that I have found works for me.
+There are some things that I run into fairly frequently (and some not so much) when I'm rendering my R Markdown documents.
+This section details some the common problems, and the solution that I have found works for me.
 
-If you want to practice on fixing broken rmarkdown documents, check out some pathologically broken examples on github at [njtierney/rmd-errors](https://github.com/njtierney/rmd-errors).
+If you want to practice on fixing broken rmarkdown documents, check out some pathologically broken examples on GitHub at [njtierney/rmd-errors](https://github.com/njtierney/rmd-errors).
 
 ## Avoiding problems
 

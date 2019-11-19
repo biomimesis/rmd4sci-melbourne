@@ -1,6 +1,7 @@
 # Keyboard Shortcuts
 
-Keyboard shortcuts tend to make our lives easier. Some that you might already be familiar with in day to day life include quickly saving (Cmd + S or Ctrl + S), or Undo (Cmd + Z or Ctrl + Z).
+Keyboard shortcuts tend to make our lives easier.
+Some that you might already be familiar with in day to day life include quickly saving (Cmd + S or Ctrl + S), or Undo (Cmd + Z or Ctrl + Z).
 
 There are many keyboard shortcuts that you can access in R, this section provides a brief tour of them, and why you might want to use them.
 

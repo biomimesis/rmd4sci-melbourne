@@ -57,7 +57,7 @@ rmarkdown::render("example.Rmd", output_format = "pdf_document")
 rmarkdown::render("example.Rmd", output_format = "word_document")
 ```
 
-### A note on workflow with R Markdown: HTML first, PDF/word later
+### A note on workflow with R Markdown: HTML first, PDF/Word later
 
 It can be easy to get caught up with how your document looks.
 I highly recommend avoiding compiling to PDF or Word until _you really need to_. [This is also recommended by the author of rmarkdown and knitr, Yihui Xie](https://yihui.name/en/2018/07/in-html-i-trust/).

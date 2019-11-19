@@ -33,15 +33,15 @@ This book aims to teach the following:
     - Change the size and type of figures
     - Save the figures to disk when creating an R Markdown document
 - Work with equations
-    - inline and display
-    - caption equations
-    - reference equations
+    - Inline and display
+    - Caption equations
+    - Reference equations
 - Manage bibliographies
   - Cite articles in text
   - generate bibliographies
   - Change bibliography styles
 - Debug and handle common errors with R Markdown
-- Next steps in working with rmarkdown - how to extend yourself to other R Markdown formats
+- Next steps in working with R Markdown - how to extend yourself to other R Markdown formats
     
 ## Why write this as a book?
 

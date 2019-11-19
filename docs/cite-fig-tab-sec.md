@@ -8,9 +8,11 @@ When you're writing a report, you often refer to a table or figure in text.
 
 <img src="cite-fig-tab-sec_files/figure-html/example-gg-oz-gap-1.png" width="672" />
 
-_Figure 1. Life expectancy from 1952 - 2007 for Australia. Life expentancy increases steadily except from 1962 to 1969. We can safely say that our life expectancy is higher than it has ever been!_
+_Figure 1. Life expectancy from 1952 - 2007 for Australia. Life expectancy increases steadily except from 1962 to 1969. We can safely say that our life expectancy is higher than it has ever been!_
 
-And sure, this is figure 1. But what happens if actually, that figure should be moved later in the paper? You need to do the following:
+And sure, this is figure 1.
+But what happens if actually, that figure should be moved later in the paper?
+You need to do the following:
 
 1. Update the reference to figure 1 in the text. 
 1. Update the figure 1 caption to not say figure 1.
@@ -59,7 +61,8 @@ output:
   bookdown::word_document2
 ```
 
-This is a new version of document that supports a better way to reference things in text. This reads as:
+This is a new version of document that supports a better way to reference things in text.
+This reads as:
 
 > Make the output the HTML/PDF/Word document from the bookdown package.
 
@@ -106,8 +109,8 @@ gapminder %>%
 ```
 
 <div class="figure">
-<img src="cite-fig-tab-sec_files/figure-html/gg-oz-plot-1.png" alt="Life expectancy from 1952 - 2007 for Australia. Life expentancy increases steadily except from 1962 to 1969. We can safely say that our life expectancy is higher than it has ever been!" width="672" />
-<p class="caption">(\#fig:gg-oz-plot)Life expectancy from 1952 - 2007 for Australia. Life expentancy increases steadily except from 1962 to 1969. We can safely say that our life expectancy is higher than it has ever been!</p>
+<img src="cite-fig-tab-sec_files/figure-html/gg-oz-plot-1.png" alt="Life expectancy from 1952 - 2007 for Australia. Life expectancy increases steadily except from 1962 to 1969. We can safely say that our life expectancy is higher than it has ever been!" width="672" />
+<p class="caption">(\#fig:gg-oz-plot)Life expectancy from 1952 - 2007 for Australia. Life expectancy increases steadily except from 1962 to 1969. We can safely say that our life expectancy is higher than it has ever been!</p>
 </div>
 
 Australia's life expectancy has increased a great deal over the past 50 years (See Figure \@ref(fig:gg-oz-plot))

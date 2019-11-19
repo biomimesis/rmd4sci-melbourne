@@ -1,7 +1,9 @@
 # Math
 
-Want to include equations in your writing? Easy. R Markdown supports
-LaTeX style equation writing. This section introduces the two types equations, inline, and display form, and how to number equations.
+Want to include equations in your writing?
+Easy.
+R Markdown supports LaTeX style equation writing.
+This section introduces the two types equations, inline, and display form, and how to number equations.
 
 ## Overview
 
@@ -49,11 +51,12 @@ $$
 
 #### Viewing equations
 
-Understanding whether or not you have created the right equation can be difficult. Rstudio provides previews of your equations in text (**demo**).
+Understanding whether or not you have created the right equation can be difficult. RStudio provides previews of your equations in text (**demo**).
 
 ## Example math commands
 
-LaTeX is an amazing language, but understanding how to create the equations can be (more than) a bit confusing at times. This section demonstrates some example equations that you might be familiar with.
+LaTeX is an amazing language, but understanding how to create the equations can be (more than) a bit confusing at times.
+This section demonstrates some example equations that you might be familiar with.
 
 
 #### Fractions
