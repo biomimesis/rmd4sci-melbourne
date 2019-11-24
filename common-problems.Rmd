@@ -1,8 +1,9 @@
-# Common Problems with rmarkdown (and some solutions)
+# Common Problems with R Markdown (and some solutions)
 
-There are some things that I run into fairly frequently (and some not so much) when I'm rendering my rmarkdown documents. This section details some the common problems, and the solution that I have found works for me.
+There are some things that I run into fairly frequently (and some not so much) when I'm rendering my R Markdown documents.
+This section details some the common problems, and the solution that I have found works for me.
 
-If you want to practice on fixing broken rmarkdown documents, check out some pathologically broken examples on github at [njtierney/rmd-errors](https://github.com/njtierney/rmd-errors).
+If you want to practice on fixing broken rmarkdown documents, check out some pathologically broken examples on GitHub at [njtierney/rmd-errors](https://github.com/njtierney/rmd-errors).
 
 ## Avoiding problems
 
@@ -19,11 +20,11 @@ Then, if there is an error:
     - find the chunk that did not work, fix until it does
     - run all chunks below
     - explore working directory issues
-      - remember that the rmarkdown directory is where the .Rmd file lives
+      - remember that the R Markdown directory is where the .Rmd file lives
 
 ## The errors
 
-What follows from here are all the errors you might in an rmarkdown document, with the following structure:
+What follows from here are all the errors you might in an R Markdown document, with the following structure:
 
 - What they might look like
 - What the error message might appear to be, and 
@@ -238,7 +239,7 @@ There is no panacea for LaTeX errors, but if you aren't familiar with "what that
 
 ## I want to include inline R code verbatim to show an example
 
-... Like for a book on using rmarkdown or something.
+... Like for a book on using R Markdown or something.
 
 Check out this great [blog post by T. Hovorka from R Views](https://rviews.rstudio.com/2017/12/04/how-to-show-r-inline-code-blocks-in-r-markdown/)
 
@@ -262,4 +263,4 @@ You need to make sure that you actually print the table or plot. If you create t
 
 ## Your Turn {.exercise}
 
-1. Go to this repo [njtierney/rmd-errors](https://github.com/njtierney/rmd-errors), and give debugging some of these common rmarkdown errors a go.
+1. Go to this repo [njtierney/rmd-errors](https://github.com/njtierney/rmd-errors), and give debugging some of these common R Markdown errors a go.

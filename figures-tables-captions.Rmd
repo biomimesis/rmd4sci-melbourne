@@ -1,6 +1,7 @@
 # Figures, Tables, Captions.
 
-You need figures and tables in your own writing, whether it be a journal paper, an internal document, or some documentation. In this section, we discuss how to add figures and tables into your rmarkdown document, and how to provide captions for them.
+You need figures and tables in your own writing, whether it be a journal paper, an internal document, or some documentation.
+In this section, we discuss how to add figures and tables into your R Markdown document, and how to provide captions for them.
 
 ## Overview
 
@@ -9,8 +10,8 @@ You need figures and tables in your own writing, whether it be a journal paper, 
 
 ## Questions
 
-* How do I create a figure in rmarkdown?
-* How do I create a table in rmarkdown?
+* How do I create a figure in R Markdown?
+* How do I create a table in R Markdown?
 * How do I add captions for figures and tables?
 
 ## Objectives
@@ -50,7 +51,7 @@ So how does that work? `kable` prints out the following:
 |Afghanistan |Asia      | 1977|  38.438| 14880372|  786.1134|
 ```
 
-And this then gets _rendered_ as a table. This works for HTML, PDF, and word! 
+And this then gets _rendered_ as a table. This works for HTML, PDF, and Word! 
 
 #### Adding captions to a table
 
@@ -71,9 +72,11 @@ knitr::kable(top_gap,
              digits = 2)
 ```
 
-There are other options that you can set in `kable`, but for these options will get you through a large majority of what you need. For more information on what `kable` can provide, see `?knitr::kable`.
+There are other options that you can set in `kable`, but for these options will get you through a large majority of what you need.
+For more information on what `kable` can provide, see `?knitr::kable`.
 
-There are many different ways to produce tables in R. We have chosen to show `kable` today because kable is minimal, but powerful. If you want to extend `kable` to do more, look at [kableExtra](https://cran.r-project.org/web/packages/kableExtra/index.html), in particular the option `kableExtra::kable_styling(latex_options = c("hold_position"))`.
+There are many different ways to produce tables in R.
+We have chosen to show `kable` today because kable is minimal, but powerful. If you want to extend `kable` to do more, look at [kableExtra](https://cran.r-project.org/web/packages/kableExtra/index.html), in particular the option `kableExtra::kable_styling(latex_options = c("hold_position"))`.
 
 ### Your Turn {.exercise}
 
@@ -83,7 +86,9 @@ There are many different ways to produce tables in R. We have chosen to show `ka
 
 ## Figures
 
-Printing figures is probably my favourite feature of rmarkdown. It is actually relatively straightforward in the case of plots. You provide the plot you want to show in a code chunk!
+Printing figures is probably my favourite feature of R Markdown.
+It is actually relatively straightforward in the case of plots.
+You provide the plot you want to show in a code chunk!
 
 #### Demo {.demo}
 
@@ -103,7 +108,8 @@ gapminder %>%
 
 ### Captions for figures {.demo}
 
-Inserting a caption for a figure is a little bit different. The caption argument is controlled in the chunk option, under the option, `fig.cap`.
+Inserting a caption for a figure is a little bit different.
+The caption argument is controlled in the chunk option, under the option, `fig.cap`.
 
 So to insert a figure, we do the following.
 
@@ -144,7 +150,7 @@ gapminder %>%
 
 We cannot always generate the graphics that we want - for example, we might have an image of something that we want to show, or perhaps a nice flowchart someone else made.
 
-In our case, say we wanted to insert the new SSA logo into our document, there are two ways we can do this.
+In our case, say we wanted to insert the APPS logo into our document, there are two ways we can do this.
 
 1. With `markdown` syntax
 1. with `knitr::include_graphics()`
@@ -155,28 +161,28 @@ The markdown syntax to insert an image is: `![caption]("path/to/image")`
 
 #### Demo {.demo}
 
-So we could insert the new SSA vic logo by doing the following:
+So we could insert the APPS 50 Years logo by doing the following:
 
 ````markdown
 ```
-![SSA Logo!](bit.ly/ssa-vic)
+![APPS 50 Years Logo!](/figs/logo-apps.png)
 ```
 ````
 
 Which would give us the following output:
 
-![SSA Logo!](figs/ssa-logo.png)
+![APPS 50 Years Logo!](/figs/logo-apps.png)
 
 But say that we want more control over the output, like we want to center the image, and we want to make it smaller? Then you can use `knitr::include_graphics()`, and control the figure size using the options `out.width`, and add a caption with `fig.cap`.
 
 ````markdown
-`r ''```{r ssa-logo, fig.align = 'center', out.width = "25%", fig.cap = "The new SSA logo, which is actually a scatterplot, which is super neat!"}
-knitr::include_graphics(here::here("figs", "ssa-logo.png"))
+`r ''```{r logo-apps, fig.align = 'center', out.width = "25%", fig.cap = "The APPS logo for our 50th year!"}
+knitr::include_graphics(here::here("figs", "logo-apps.png"))
 ```
 ````
 
-```{r ssa-logo, fig.align = 'center', out.width = "25%", fig.cap = "The new SSA logo, which is actually a scatterplot, which is super neat!"}
-knitr::include_graphics(here::here("figs", "ssa-logo.png"))
+```{r logo-apps, fig.align = 'center', out.width = "25%", fig.cap = "The APPS logo for our 50th year!"}
+knitr::include_graphics(here::here("figs", "logo-apps.png"))
 ```
 
 `
@@ -184,7 +190,7 @@ knitr::include_graphics(here::here("figs", "ssa-logo.png"))
 ### Your Turn {.exercise}
 
 1. Download [the gapminder logo](https://www.gapminder.org/wp-content/themes/gapminder/images/logo.png) and put it into a new directory call "figs"
-1. Insert this image into your rmarkdown document around where you introduce gapminder.
+1. Insert this image into your R Markdown document around where you introduce gapminder.
 
 ## Summary
 

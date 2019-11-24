@@ -1,6 +1,6 @@
 book_filename: rmd4sci
-output_dir: _book
-repo: https://github.com/njtierney/rmd4sci
+output_dir: "docs"
+repo: https://github.com/openplantpathology/rmd4sci-melbourne
 css: style.css
 new_session: yes # this knits each chapter separately in a new session
 delete_merged_file: true

@@ -30,7 +30,7 @@ In groups of 2-4 discuss:
 
 This section is heavily influenced by [Jenny Bryan's great blog post on project based workflows.](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/)
 
-Sometimes this is the first line of an R Script or R markdown file.
+Sometimes this is the first line of an R Script or R Markdown file.
 
 ```r
 setwd("c:/really/long/file/path/to/this/directory)
@@ -58,7 +58,7 @@ data <- read_csv("c:/really/long/file/path/to/this/directory/data/mydata.csv")
 
 So while this has the effect of **making the file paths work in your file**, it is a problem. It is a problem because, among other things, using `setwd()` like this:
 
-* Has 0% chance of working on someone else's machine (**this includes you in >6 months**)
+* Has 0% chance of working on someone else's machine (**this could include you in 6 months!**)
 * Your file is not self-contained and portable. (Think: _"What if this folder moved to /Downloads, or onto another machine?"_)
 
 So, to get this to work, you need to hand edit the file path to your machine. 
@@ -67,20 +67,20 @@ This is painful. And when you do this all the time, it gets old, fast.
 
 ## What is a file path?
   
-So, this might all be a bit confusing if you don't know what a file path is. Briefly, a file path is the machine-readable directions to where files on your computer live. So, the file path:
+So, this might all be a bit confusing if you don't know what a file path is. A file path is the machine-readable directions to where files on your computer live. So, the file path:
 
 ```
-/Users/njtierney/rmd4sci-materials/demo-gapminder.Rmd
+/Users/njtierney/rmd4sci-materials/demo.R
 ```
 
-Describes the location of the file "demo-gapminder.Rmd". This could be visualised as:
+Describes the location of the file "demo.R". This could be visualised as:
 
 ```
 users
   └── njtierney
       └── Desktop
           └──  rmd4sci-materials
-               └──  demo.R
+               └── demo.R << THIS IS THE FILE HERE
                └── exercises
                └── exploratory-data-analysis
                    └── eda-document.Rmd
@@ -129,15 +129,16 @@ This file path situation is a real pain. Is there an answer to the madness?
 
 The answer is yes!
 
-I highly recommend when you start on a new idea, new research project, paper. Anything that is new. It should start its life as an **rstudio project**. 
+I highly recommend when you start on a new idea, new research project, paper. Anything that is new.
+It should start its life as an **RStudio Project**. 
 
-An rstudio project helps keep related work together in the same place. Amongst other things, they:
+An RStudio Project helps keep related work together in the same place. Amongst other things, they:
 
 * Keep all your files together
 * Set the working directory to the project directory
 * Starts a new session of R
 * Restore previously edited files into the editor tabs
-* Restore other rstudio settings
+* Restore other RStudio settings
 * Allow for multiple R projects open at the same time.
 
 This helps keep you sane, because:
@@ -149,21 +150,21 @@ This helps keep you sane, because:
 
 And finally, the big one
 
-**RStudio projects help resolve file path problems**, because they automatically set the working directory to the location of the rstudio project.
+**RStudio Projects help resolve file path problems**, because they automatically set the working directory to the location of the rstudio project.
 
 Let's open one together.
 
-## Your Turn: Use your own rstudio project {.exercise}
+## Your Turn: Use your own RStudio project {.exercise}
 
-1. Run the following code to start a new rstudio project called "rmd4sci-melbourne"
+1. Run the following code to start a new RStudio project called "rmd4sci-melbourne"
 
 ```r
-usethis::use_course("bit.ly/rmd4sci-melbourne")
+usethis::use_course("bit.ly/rmd4sci-materials")
 ```
 
-2. Follow the prompts to download this to your desktop and then run the rstudio project. (You can move it later if you like!)
+2. Follow the prompts to download this to your desktop and then run the RStudio project. (You can move it later if you like!)
 
-3. You are now in an rstudio project!
+3. You are now in an RStudio project!
 
 ## Your turn {.exercise}
 
@@ -171,10 +172,13 @@ usethis::use_course("bit.ly/rmd4sci-melbourne")
 2. Why does the `read_csv` code work?
 3. Run the code inside the `exploratory-data-analysis` folder - `eda-script.R`.
 4. Does the `read_csv` code work?
+5. Run the code inside the `exploratory-data-analysis` folder - `eda-document.Rmd`, by clicking the "knit" button (we'll go into this in more detail soon!)
+6. Does it work?
 
 ## The "here" package
 
-Although RStudio projects help resolve file path problems, in some cases you might have many folders in your r project. To help navigate them appropriately, you can use the `here` package to provide the full path directory, in a compact way.
+Although RStudio Projects help resolve file path problems, in some cases you might have many folders in your r project.
+To help navigate them appropriately, you can use the `here` package to provide the full path directory, in a compact way.
 
 ```r
 here::here("data")
@@ -205,8 +209,8 @@ You can read the above `here` code as:
 This is really handy for a few reasons:
 
 1. It makes things _completely_ portable
-1. Rmarkdown documents have a special way of looking for files, this helps eliminate file path pain.
-1. If you decide to not use RStudio projects, you have code that will work on _any machine_
+1. R Markdown documents have a special way of looking for files, this helps eliminate file path pain.
+1. If you decide to not use RStudio Projects, you have code that will work on _any machine_
 
 ## Remember
 
@@ -221,11 +225,11 @@ setwd("C:\Users\jenny\path\that\only\I\have")
 
 ### Aside: Creating an RStudio project {.history}
 
-You can create an rstudio project by going to:
+You can create an RStudio Project by going to:
 
-file > new project > new directory > new project > name your project > create project.
+File > New Project > New Directory > New Project > name your project > create project.
 
-You can also click on the create project button in the top left corner
+You can also click on the create project button in the top left corner or "New Project" from the dropdown in the top right corner.
 
 ```{r rstudio-create-proj-1, echo = FALSE, fig.align = "center", out.width = "50%"}
 knitr::include_graphics(here::here("figs", "rstudio-create-proj-1.png"))
@@ -257,14 +261,14 @@ And click "create project".
 knitr::include_graphics(here::here("figs", "rstudio-create-proj-4.png"))
 ```
 
-D<!-- TODO: need to update image? -->
+D!-- TODO: need to update image? -->
 
-one!
+oDne!
 
 ## Summary
 
 In this lesson we've:
 
 * Learnt what file paths are
-* How to setup an rstudio project
+* How to setup an RStudio project
 * How to construct full file paths with the `here` package
