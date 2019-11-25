@@ -112,7 +112,7 @@ gapminder <- read_csv("data/gapminder.csv")
 * What would be the result of using the following code in `demo-gapminder.Rmd`, and then using the code, and then moving this to another location, say inside your C drive?
 
 ```r
-setwd("Downloads/etc1010/week1/week1.Rmd)
+setwd("Downloads/etc1010/week1/week1.Rmd")
 ```
 
 ## Is there an answer to the madness?
