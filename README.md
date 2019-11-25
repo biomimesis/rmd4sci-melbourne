@@ -4,9 +4,9 @@
 
 # R Markdown for Scientists <img src="logo.png" align="right" height=140/>
 
-<http://openplantpathology.github.io/rmd4sci-melbourne/>
-
 This is a book on R Markdown, aimed for scientists. It was initially developed as a 3 hour workshop, but is now developed into a resource that will grow and change over time as a **living book**.
+
+Link to the rendered book: <http://openplantpathology.github.io/rmd4sci-melbourne/>
 
 This book aims to teach the following:
 
@@ -29,7 +29,7 @@ This book aims to teach the following:
   - generate bibliographies
   - Change bibliography styles
 - Debug and handle common errors with R Markdown
-- Next steps in working with R Markdown - how to extend yourself to other rmarkdown formats
+- Next steps in working with R Markdown - how to extend yourself to other R Markdown formats
 
 # Abstract aka "why should you read this"
 
