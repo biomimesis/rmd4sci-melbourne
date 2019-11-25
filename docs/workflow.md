@@ -223,15 +223,15 @@ File > New Project > New Directory > New Project > name your project > create pr
 
 You can also click on the create project button in the top left corner or "New Project" from the dropdown in the top right corner.
 
-<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-1.png" width="50%" style="display: block; margin: auto;" />
+<img src="/home/adam/Sources/GitHub/rmd4sci-melbourne/figs/rstudio-create-proj-1.png" width="50%" style="display: block; margin: auto;" />
 
 Then go to new directory, if it is a new folder - otherwise if you have an existing folder you have - click on existing directory.
 
-<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-2.png" width="50%" style="display: block; margin: auto;" />
+<img src="/home/adam/Sources/GitHub/rmd4sci-melbourne/figs/rstudio-create-proj-2.png" width="50%" style="display: block; margin: auto;" />
 
 Then go to new project
 
-<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-3.png" width="50%" style="display: block; margin: auto;" />
+<img src="/home/adam/Sources/GitHub/rmd4sci-melbourne/figs/rstudio-create-proj-3.png" width="50%" style="display: block; margin: auto;" />
 
 Then write the name of your project. I think it is usually worthwhile spending a bit of time thinking of a name for your project. Even if it is only a few minutes, it can make a difference. You want to think about:
 
@@ -243,7 +243,7 @@ For example, I have a project looking at bat calls, so I called it `screech`, be
 
 And click "create project". 
 
-<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rstudio-create-proj-4.png" width="50%" style="display: block; margin: auto;" />
+<img src="/home/adam/Sources/GitHub/rmd4sci-melbourne/figs/rstudio-create-proj-4.png" width="50%" style="display: block; margin: auto;" />
 
 D!-- TODO: need to update image? -->
 

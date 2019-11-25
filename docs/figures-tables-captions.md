@@ -252,7 +252,7 @@ knitr::include_graphics(here::here("figs", "logo-apps.png"))
 ```
 
 <div class="figure" style="text-align: center">
-<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/logo-apps.png" alt="The APPS logo for our 50th year!" width="25%" />
+<img src="/home/adam/Sources/GitHub/rmd4sci-melbourne/figs/logo-apps.png" alt="The APPS logo for our 50th year!" width="25%" />
 <p class="caption">(\#fig:logo-apps)The APPS logo for our 50th year!</p>
 </div>
 
