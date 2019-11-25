@@ -210,7 +210,7 @@ But if you did it in R Markdown?
 
 Just update the data, and render the document again, and get an updated document:
 
-<img src="/Users/U8004755/Development/rmd4sci-melbourne/figs/rmd-report-example-all-data.png" width="80%" style="display: block; margin: auto;" />
+<img src="/home/adam/Sources/GitHub/rmd4sci-melbourne/figs/rmd-report-example-all-data.png" width="80%" style="display: block; margin: auto;" />
 
 The results are different!
 

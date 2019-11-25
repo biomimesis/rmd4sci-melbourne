@@ -1,7 +1,7 @@
 --- 
 title: "R Markdown for Scientists"
 author: "Nicholas Tierney"
-date: "2019-11-20"
+date: "2019-11-25"
 knit: "bookdown::render_book"
 description: "A book created for a 3 hour workshop on R Markdown"
 documentclass: krantz

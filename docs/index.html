@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>R Markdown for Scientists</title>
   <meta name="description" content="A book created for a 3 hour workshop on R Markdown" />
-  <meta name="generator" content="bookdown 0.15 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
 
   <meta property="og:title" content="R Markdown for Scientists" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Nicholas Tierney" />
 
 
-<meta name="date" content="2019-11-20" />
+<meta name="date" content="2019-11-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -54,18 +54,17 @@
 
 
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -85,7 +84,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -332,16 +331,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="16.3" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#duplication-duplicated-chunk-names"><i class="fa fa-check"></i><b>16.3</b> “Duplication”: Duplicated chunk names</a></li>
 <li class="chapter" data-level="16.4" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#not-what-i-ordered-objects-not-created-in-the-right-order"><i class="fa fa-check"></i><b>16.4</b> “Not what I ordered”: Objects not created in the right order</a></li>
 <li class="chapter" data-level="16.5" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#forgotten-trails-i-missing-or-or"><i class="fa fa-check"></i><b>16.5</b> “Forgotten Trails I”: Missing “,”, or “(”, “}”, or “’”</a></li>
-<li><a href="common-problems-with-r-markdown-and-some-solutions.html#forgotten-trails-ii-chunk-option-with-trailing-or-not-input-forgotten-trail-iii-the-path-not-taken-file-path-incorrect"><span class="toc-section-number">16.6</span> “Forgotten Trails II”: Chunk option with trailing “, or not input
-##”Forgotten Trail III“:
-##”The Path Not Taken" File path incorrect</a></li>
-<li class="chapter" data-level="16.7" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#spolling-i-incorrectly-spelled-chunk-options"><i class="fa fa-check"></i><b>16.7</b> “Spolling I” Incorrectly spelled chunk options</a></li>
-<li class="chapter" data-level="16.8" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#spolling-ii-incorrectly-spelled-chunk-option-inputs"><i class="fa fa-check"></i><b>16.8</b> “Spolling II” Incorrectly spelled chunk option inputs</a></li>
-<li class="chapter" data-level="16.9" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#the-legend-of-link-i-your-images-in-dont-work."><i class="fa fa-check"></i><b>16.9</b> “The Legend of Link I”: Your images in <code>![]()</code> don’t work.</a></li>
-<li class="chapter" data-level="16.10" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#latex-errors"><i class="fa fa-check"></i><b>16.10</b> LaTeX errors</a></li>
-<li class="chapter" data-level="16.11" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#i-want-to-include-inline-r-code-verbatim-to-show-an-example"><i class="fa fa-check"></i><b>16.11</b> I want to include inline R code verbatim to show an example</a></li>
-<li class="chapter" data-level="16.12" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#my-figure-or-table-isnt-being-cited"><i class="fa fa-check"></i><b>16.12</b> My Figure or Table isn’t being cited</a></li>
-<li class="chapter" data-level="16.13" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#your-turn-22"><i class="fa fa-check"></i><b>16.13</b> Your Turn</a></li>
+<li class="chapter" data-level="16.6" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#forgotten-trails-ii-chunk-option-with-trailing-or-not-input"><i class="fa fa-check"></i><b>16.6</b> “Forgotten Trails II”: Chunk option with trailing ", or not input</a></li>
+<li class="chapter" data-level="16.7" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#forgotten-trail-iii"><i class="fa fa-check"></i><b>16.7</b> “Forgotten Trail III”:</a></li>
+<li class="chapter" data-level="16.8" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#the-path-not-taken-file-path-incorrect"><i class="fa fa-check"></i><b>16.8</b> “The Path Not Taken” File path incorrect</a></li>
+<li class="chapter" data-level="16.9" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#spolling-i-incorrectly-spelled-chunk-options"><i class="fa fa-check"></i><b>16.9</b> “Spolling I” Incorrectly spelled chunk options</a></li>
+<li class="chapter" data-level="16.10" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#spolling-ii-incorrectly-spelled-chunk-option-inputs"><i class="fa fa-check"></i><b>16.10</b> “Spolling II” Incorrectly spelled chunk option inputs</a></li>
+<li class="chapter" data-level="16.11" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#the-legend-of-link-i-your-images-in-dont-work."><i class="fa fa-check"></i><b>16.11</b> “The Legend of Link I”: Your images in <code>![]()</code> don’t work.</a></li>
+<li class="chapter" data-level="16.12" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#latex-errors"><i class="fa fa-check"></i><b>16.12</b> LaTeX errors</a></li>
+<li class="chapter" data-level="16.13" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#i-want-to-include-inline-r-code-verbatim-to-show-an-example"><i class="fa fa-check"></i><b>16.13</b> I want to include inline R code verbatim to show an example</a></li>
+<li class="chapter" data-level="16.14" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#my-figure-or-table-isnt-being-cited"><i class="fa fa-check"></i><b>16.14</b> My Figure or Table isn’t being cited</a></li>
+<li class="chapter" data-level="16.15" data-path="common-problems-with-r-markdown-and-some-solutions.html"><a href="common-problems-with-r-markdown-and-some-solutions.html#your-turn-22"><i class="fa fa-check"></i><b>16.15</b> Your Turn</a></li>
 </ul></li>
 <li class="chapter" data-level="17" data-path="different-outputs-and-extensions.html"><a href="different-outputs-and-extensions.html"><i class="fa fa-check"></i><b>17</b> Different Outputs and Extensions</a><ul>
 <li class="chapter" data-level="17.1" data-path="different-outputs-and-extensions.html"><a href="different-outputs-and-extensions.html#alternative-output-formats"><i class="fa fa-check"></i><b>17.1</b> Alternative output formats</a><ul>
@@ -395,7 +394,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">R Markdown for Scientists</h1>
 <p class="author"><em>Nicholas Tierney</em></p>
-<p class="date"><em>2019-11-20</em></p>
+<p class="date"><em>2019-11-25</em></p>
 </div>
 <div id="foreword" class="section level1">
 <h1><span class="header-section-number">1</span> Foreword</h1>
@@ -428,14 +427,14 @@ What follows is Nick’s introduction to this material.</p>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
+"github": true,
 "facebook": false,
 "twitter": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"],
-"github": true
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -450,6 +449,10 @@ gitbook.start({
 "link": null,
 "text": null
 },
+"view": {
+"link": null,
+"text": null
+},
 "download": ["rmd4sci.epub"],
 "toc": {
 "collapse": "section"
@@ -458,6 +461,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
