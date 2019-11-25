@@ -4,6 +4,8 @@
 
 # R Markdown for Scientists <img src="logo.png" align="right" height=140/>
 
+<http://openplantpathology.github.io/rmd4sci-melbourne/>
+
 This is a book on R Markdown, aimed for scientists. It was initially developed as a 3 hour workshop, but is now developed into a resource that will grow and change over time as a **living book**.
 
 This book aims to teach the following:
